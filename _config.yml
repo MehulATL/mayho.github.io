@@ -8,10 +8,10 @@ url:              http://mayho.github.io
 owner:
   name:           Mehul Patel
   avatar:         avatar.jpg
-  bio:            "Your bio goes here. It shouldn't be super long but a good two sentences or two should suffice."
+  bio:            "code.push.repeat"
   email:          mehul8@gmail.com
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        twitter.com/itsmayho
+  twitter:        itsmayho
   facebook:       itsmayho
   github:         mayho
   stackexchange:
@@ -20,7 +20,7 @@ owner:
   flickr:
   tumblr:
   # For Google Authorship https://plus.google.com/authorship
-  google_plus:
+  google_plus: mehulpatel8
 
 # Background image to be tiled on all pages
 background: ps_neutral.png
@@ -34,8 +34,6 @@ bing_verify:
 # Links to include in top navigation
 # For external links add external: true
 links:
-  - title: Theme Setup
-    url: /theme-setup
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/Los_Angeles
