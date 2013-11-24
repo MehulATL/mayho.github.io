@@ -11,9 +11,9 @@ comments: true
 share: true
 ---
 
-Today I will be showing y'all my implementation of a [merge sort](http://en.wikipedia.org/wiki/Merge_sort) in javascript. Implementing merge sorts is a very popular interview exercize, and as such it's in our best interest to understand this sorting algorithm.
+Today I will be showing y'all my implementation of a [merge sort](http://en.wikipedia.org/wiki/Merge_sort) in javascript. Implementing merge sorts is a very popular interview exercize. Luckily merge sort is a very intuitive to write a recursive solution for.
 
-Our solution does the following --
+Merge sort does the following --
 
   1. If the unsorted array's length is less than two, it's already sorted. In this case we just return the unsorted array.
   2. We split the unsorted array in half.
@@ -22,13 +22,14 @@ Our solution does the following --
 
 <figure>
   <img src="http://i.stack.imgur.com/VUbeY.jpg" alt="merge sort">
-  <figcaption>A visualization of what merge sort does.</figcaption>
 </figure>
+
+
 
 {% highlight javascript linenos %}
 {% raw %}
 
-// the following merge function is going to be the workhorse of our implementation.
+// the merge function is going to be the workhorse of our implementation.
 // it takes 2 arrays and merges them into one ordered array.
 var merge = function(leftHalf, rightHalf){
   var result = [];
