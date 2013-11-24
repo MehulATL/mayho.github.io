@@ -11,15 +11,14 @@ comments: true
 share: true
 ---
 
-Today I will be showing y'all my implementation of a [merge sort](http://en.wikipedia.org/wiki/Merge_sort) in javascript. Implementing merge sorts is a very popular interview exercize.
-The sorting algorithm is as follows --
+Today I will be showing y'all my implementation of a [merge sort](http://en.wikipedia.org/wiki/Merge_sort) in javascript. Implementing merge sorts is a very popular interview exercize. Our solution does the following --
 
   1. If the unsorted array's length is less than two, it's already sorted. In this case we just return the unsorted array.
   2. We split the unsorted array in half.
   3. Use recursion to keep splitting the sub arrays.
   4. Merge the sub array back to form your sorted result array.
 
-{% highlight html linenos %}
+{% highlight javascript linenos %}
 {% raw %}
 
 // the following merge function is going to be the workhorse of our implementation.
@@ -46,7 +45,7 @@ var merge = function(leftHalf, rightHalf){
   return result;
 }
 
-// I've added the optional parameter fn and a few lines of code to allow for [polymorphism.](http://en.wikipedia.org/wiki/Polymorphism_(computer_science))
+// I've added the optional parameter fn and a few lines of code to allow for polymorphism*.
 // Polymorphism allows our mergeSort to work with other datatypes, such as objects.
 var mergeSort = function(array, fn){
   fn = (typeof(fn) === 'function') ? fn : function(a, b){
@@ -76,6 +75,8 @@ var mergeSort = function(array, fn){
 
 {% endraw %}
 {% endhighlight %}
+
+You can read more about [polymorphism](http://en.wikipedia.org/wiki/Polymorphism_(computer_science)) here.
 
 If would love for y'all to hit me up with any questions or comments on this blog post.
 Hope it helped!
