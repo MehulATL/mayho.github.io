@@ -83,5 +83,5 @@ var mergeSort = function(array, fn){
 
 You can read more about [polymorphism](http://en.wikipedia.org/wiki/Polymorphism_(computer_science)) here.
 
-If would love for y'all to hit me up with any questions or comments on this blog post.
+I would love for y'all to hit me up with any questions or comments on this blog post.
 Hope it helped!
