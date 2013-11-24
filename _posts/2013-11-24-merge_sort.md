@@ -20,7 +20,7 @@ Merge sort does the following --
   3. Use recursion to keep splitting the sub arrays.
   4. Merge the sub array back to form your sorted result array.
 
-Now that we have wrapped our minds around what merge sorts actually do, let's move onto the code.
+Now that we have wrapped our heads around what merge sorts actually do, let's move onto the code.
 
 {% highlight javascript linenos %}
 {% raw %}
