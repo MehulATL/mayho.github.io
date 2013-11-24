@@ -11,7 +11,7 @@ comments: true
 share: true
 ---
 
-Today I will be showing y'all my implementation of a [merge sort](http://en.wikipedia.org/wiki/Merge_sort) in javascript. Implementing merge sorts is a very popular interview exercize. Luckily merge sort is a very intuitive to write a recursive solution for.
+Today I will be showing y'all my implementation of a [merge sort](http://en.wikipedia.org/wiki/Merge_sort) function in javascript. Implementing merge sorts is a very popular interview exercize, luckily merge sort is a very intuitive to write a recursive solution for.
 
 Merge sort does the following --
 
@@ -20,6 +20,7 @@ Merge sort does the following --
   3. Use recursion to keep splitting the sub arrays.
   4. Merge the sub array back to form your sorted result array.
 
+Now that we have wrapped our minds around what merge sorts actually do, let's move onto the code.
 
 {% highlight javascript linenos %}
 {% raw %}

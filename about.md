@@ -10,6 +10,8 @@ image:
 share: true
 ---
 
-## blah blah blah
+## Hi I'm Mehul!
 
-Cupcake ipsum dolor sit amet cupcake muffin. I love I love cake cheesecake icing I love. Tart gummi bears topping I love. Croissant liquorice chupa chups ice cream pudding. Gummi bears cookie pie. Candy candy unerdwear.com marzipan toffee. I love chocolate cake halvah. Toffee candy jelly-o jujubes cheesecake halvah applicake. Bonbon cheesecake liquorice cookie chupa chups cotton candy. Biscuit gummies chocolate bar chocolate bar carrot cake jelly lemon drops bonbon lemon drops. Bonbon jelly beans danish jelly biscuit tiramisu ice cream. Wafer lemon drops chocolate cake tootsie roll. Unerdwear.com carrot cake unerdwear.com tart. I love toffee jelly-o halvah danish candy fruitcake dessert macaroon.
+I'm a 25 year old software engineer from Geogia that has recently relocated to San Francisco. I'm currently attending [Hack Reactor](http://hackreactor.com), a super intense coding bootcamp that focuses on javascript. I'm really intereted in mobile web application development, as I feel the line between what can be done with native mobile apps and web apps is getting blurrier everyday.
+
+On another note, I play fighting games competitively. The main game I compete in is [Ultimate Marvel vs. Capcom 3](http://www.youtube.com/watch?v=vkeKkrxoT8M). You should def hit me up if you'd like to go a few rounds.
