@@ -11,12 +11,19 @@ comments: true
 share: true
 ---
 
-Today I will be showing y'all my implementation of a [merge sort](http://en.wikipedia.org/wiki/Merge_sort) in javascript. Implementing merge sorts is a very popular interview exercize. Our solution does the following --
+Today I will be showing y'all my implementation of a [merge sort](http://en.wikipedia.org/wiki/Merge_sort) in javascript. Implementing merge sorts is a very popular interview exercize, and as such it's in our best interest to understand this sorting algorithm.
+
+Our solution does the following --
 
   1. If the unsorted array's length is less than two, it's already sorted. In this case we just return the unsorted array.
   2. We split the unsorted array in half.
   3. Use recursion to keep splitting the sub arrays.
   4. Merge the sub array back to form your sorted result array.
+
+<figure>
+  <img src="http://i.stack.imgur.com/VUbeY.jpg" alt="merge sort">
+  <figcaption>A visualization of what merge sort does.</figcaption>
+</figure>
 
 {% highlight javascript linenos %}
 {% raw %}
@@ -26,8 +33,8 @@ Today I will be showing y'all my implementation of a [merge sort](http://en.wiki
 var merge = function(leftHalf, rightHalf){
   var result = [];
 
-  // We need to check whether the first or second array starts with the smaller number
-  // and push it into our result array.
+  // We need to check whether the first or second array starts with
+  // the smaller number and push it into our result array.
   while (leftHalf.length && rightHalf.length) {
     if (leftHalf[0] <= rightHalf[0]) {
       result.push(leftHalf.shift());
@@ -45,8 +52,9 @@ var merge = function(leftHalf, rightHalf){
   return result;
 }
 
-// I've added the optional parameter fn and a few lines of code to allow for polymorphism*.
-// Polymorphism allows our mergeSort to work with other datatypes, such as objects.
+// I've added the optional parameter fn and a few lines of to mergeSort()
+// to all for polymorphism. Polymorphism allows our function
+// to work with other datatypes, such as objects.
 var mergeSort = function(array, fn){
   fn = (typeof(fn) === 'function') ? fn : function(a, b){
     if (a < b){
@@ -64,9 +72,9 @@ var mergeSort = function(array, fn){
   }
 
   // split our input array in half
-  var half = parseInt(array.length / 2);
-  var leftHalf   = array.slice(0, half);
-  var rightHalf  = array.slice(half, array.length);
+  var getHalf = parseInt(array.length / 2);
+  var leftHalf = array.slice(0, getHalf);
+  var rightHalf = array.slice(getHalf, array.length);
 
   // using recursion to continue splitting our array, and then feeding the results
   // to our merge function to construct our final output array.
