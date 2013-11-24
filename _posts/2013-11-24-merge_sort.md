@@ -20,11 +20,6 @@ Merge sort does the following --
   3. Use recursion to keep splitting the sub arrays.
   4. Merge the sub array back to form your sorted result array.
 
-<figure>
-  <img src="http://i.stack.imgur.com/VUbeY.jpg" alt="merge sort">
-</figure>
-
-
 
 {% highlight javascript linenos %}
 {% raw %}
