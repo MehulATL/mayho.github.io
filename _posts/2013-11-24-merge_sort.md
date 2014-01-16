@@ -30,21 +30,21 @@ Now that we have wrapped our heads around what merge sorts actually do, let's mo
 var merge = function(leftHalf, rightHalf){
   var result = [];
 
-  // We need to check whether the first or second array starts with
-  // the smaller number and push it into our result array.
-  while (leftHalf.length && rightHalf.length) {
-    if (leftHalf[0] <= rightHalf[0]) {
-      result.push(leftHalf.shift());
+  // we first check if both sides have hte same length
+  while(left.length || right.length) {
+    // if both sides have members left, compare members and push the correct value to result array
+    if(left.length && right.length) {
+      if(left[0] < right[0]) {
+        result.push(left.shift());
+      } else {
+        result.push(right.shift());
+      }
+      // if only one side has members, push those members in
+    } else if (left.length) {
+      result.push(left.shift());
     } else {
-      result.push(rightHalf.shift());
+      result.push(right.shift());
     }
-  }
-
-  while (leftHalf.length){
-    result.push(leftHalf.shift());
-  }
-  while (rightHalf.length){
-    result.push(rightHalf.shift());
   }
   return result;
 }
